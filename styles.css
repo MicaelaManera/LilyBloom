@@ -65,7 +65,7 @@ nav ul li .dropdown li a {
     background-color: #e2e2e2;
 }
 
-.hero h1{
+.hero h1 {
     font-size: 3rem;
 }
 
@@ -99,18 +99,18 @@ nav ul li .dropdown li a {
     flex-direction: row-reverse;
 }
 
-#openModal{
+#openModal {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 25px;
     padding: 10px 20px;
     background-color: rgb(68, 1, 1);
     color: rgb(167, 164, 164);
-    cursor:pointer;
+    cursor: pointer;
 }
 
-#openModal:hover{
-    background-color: rgb(218, 213, 213) ;
+#openModal:hover {
+    background-color: rgb(218, 213, 213);
     color: rgb(151, 0, 0);
 }
 
@@ -136,7 +136,7 @@ nav ul li .dropdown li a {
     border-radius: 10px;
 }
 
-.modal-content p{
+.modal-content p {
     font-size: 1.3rem;
 }
 
@@ -145,34 +145,79 @@ nav ul li .dropdown li a {
     max-width: 100%;
 }
 
-.close{
+.close {
     font-size: 25px;
-    cursor:pointer;
+    cursor: pointer;
 }
-
 
 .slides {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 1rem;
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    padding: 10px;
-    margin: 20px;
+    width: 90%;
+    margin-inline: auto;
+    position: relative;
+    height: 134px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
 }
 
-.slides > img {
-    scroll-snap-align: start;
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+
+    }
 }
 
-.slides img {
-    border-radius: 10px;
-    width: 300px;
-    object-fit: contain;
+.slides>img {
+    width: 200px;
+    border-radius: 6px;
+    position: absolute;
+    left: calc(200px * 10);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-.slides::-webkit-scrollbar {
-    display: none;
+.item1 {
+    animation-delay: calc(30s / 10 * (10 - 1) * -1)
+}
+
+.item2 {
+    animation-delay: calc(30s / 10 * (10 - 2) * -1)
+}
+
+.item3 {
+    animation-delay: calc(30s / 10 * (10 - 3) * -1)
+}
+
+.item4 {
+    animation-delay: calc(30s / 10 * (10 - 4) * -1)
+}
+
+.item5 {
+    animation-delay: calc(30s / 10 * (10 - 5) * -1)
+}
+
+.item6 {
+    animation-delay: calc(30s / 10 * (10 - 6) * -1)
+}
+
+.item7 {
+    animation-delay: calc(30s / 10 * (10 - 7) * -1)
+}
+
+.item8 {
+    animation-delay: calc(30s / 10 * (10 - 8) * -1)
+}
+
+.item9 {
+    animation-delay: calc(30s / 10 * (10 - 9) * -1)
+}
+
+.item10 {
+    animation-delay: calc(30s / 10 * (10 - 10) * -1)
 }
