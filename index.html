@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LilyBloom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación con menú desplegable -->
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a>
+                <ul class="dropdown">
+                    <li><a href="#">Asesoramiento de Imagen</a></li>
+                    <li><a href="#">Charlas Técnicas</a></li>
+                    <li><a href="#">Marcas</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección principal -->
+    <section class="hero">
+        <h1>¡BIENVENIDOS A LILYBLOOM!</h1>
+        <p>Moda, tendencias, asesoramiento, charlas y más.</p>
+
+        <!-- Imagen 1 a la derecha, texto a la izquierda -->
+        <div class="image-section">
+            <p>Soy Liliana, asesora de imagen personal. Te ayudo a convertir tu guardaropas en tu mejor aliado. La compra inteligente de las prendas es el principan detalle. ¡LUEGO RESOLVEMOS CÓMO COMBINARLAS!</p>
+            <img src="rss/img/moda1.jpg" alt="Servicio destacado 1" class="hero-image">
+        </div>
+
+        <!-- Imagen 2 a la izquierda, texto a la derecha -->
+        <div class="image-section">
+            <img src="rss/img/moda2.jpg" alt="Servicio destacado 2" class="hero-image">
+            <p>La información es poder. En conjunto con Instituciones Educativas, coordinamos diversas charlas y entrevistas para brindar capacitaciones a los alumnos y personas de interés sobre el tema.</p>
+        </div>
+
+        <!-- Imagen 3 a la derecha, texto a la izquierda -->
+        <div class="image-section">
+            <p>Diversas marcas eligen aliarse con profesionales para potenciar aún más sus productos y sus ventas. ¡ENTERATE CUÁLES SON!</p>
+            <img src="rss/img/moda3.jpg" alt="Servicio destacado 3" class="hero-image">
+        </div>
+
+        <button id="openModal">¡¡TE VA A GUSTAR!!</button>
+    </section>
+
+    
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>¡Copia este código y accedé a descuentos en mis servicios!</p>
+            <p>OK15CODE</p>
+            <!-- Imagen en el modal -->
+            <img src="rss/img/descuento.jpg" alt="Imagen modal" class="modal-image">
+        </div>
+    </div>
+
+    <div class="slides"> 
+        <img src="/img/adidas_logo.png" alt="">
+        <img src="/img/nike_logo.png" alt="">
+        <img src="/img/zara_logo.png" alt="">
+        <img src="/img/tommy_logo.png" alt="">
+        <img src="/img/lacoste_logo.png" alt="">
+        <img src="/img/anca_co_logo.png" alt="">
+        <img src="/img/new_balance.png" alt="">
+        <img src="/img/jazmin_chebar.png" alt="">
+        <img src="/img/kosiuko_logo.png" alt="">
+        <img src="/img/sarcani_logo.png" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
